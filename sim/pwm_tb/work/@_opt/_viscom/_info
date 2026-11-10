@@ -1,0 +1,5 @@
+__design_bin_path=/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/pwm_tb
+incr_run_version=32768
+incr_partial_run_stats=0:0
+incr_no_change_stats=0:0
+opt_data_elab=/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/pwm_tb/work/@_opt

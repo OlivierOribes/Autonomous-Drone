@@ -1,0 +1,284 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/top_tb
+Edirection
+Z1 w1793899159
+Z2 DPx4 work 9 drone_pkg 0 22 bLVQBTH[EYdzd23>FUUi73
+Z3 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 52
+R0
+Z6 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd
+Z7 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd
+l0
+L31 1
+VKBBa;IT@k7I7VV6]WQi=?0
+!s100 C6`6OLEMifbl4ZE^@MNlc0
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1793988696
+!i10b 1
+Z10 !s108 1793988696.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd|
+Z12 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+Z15 DEx4 work 9 direction 0 22 KBBa;IT@k7I7VV6]WQi=?0
+!i122 52
+l61
+L49 122
+VhHPfkn@aSmZB4RLE26b4R2
+!s100 j8Na5oLj2eZHMJNH4foaC1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pdrone_pkg
+R3
+R4
+R5
+!i122 53
+Z16 w1793692491
+R0
+Z17 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/drone_pkg.vhd
+Z18 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/drone_pkg.vhd
+l0
+L28 1
+VbLVQBTH[EYdzd23>FUUi73
+!s100 T==]5gIH9Kak7XchhozX01
+R8
+32
+b1
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/drone_pkg.vhd|
+Z20 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/drone_pkg.vhd|
+!i113 1
+R13
+R14
+Bbody
+R2
+R3
+R4
+R5
+!i122 53
+l0
+L78 1
+Vh5Q8>5b34]_UDoXQ2NKJX2
+!s100 jFiXd7PH[ceK>FQGk<D?f2
+R8
+32
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Epwm
+Z21 w1793918998
+R2
+R3
+R4
+R5
+!i122 54
+R0
+Z22 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd
+Z23 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd
+l0
+L32 1
+VOlYejm770FB=:H3dOBIYd1
+!s100 NQ6ibQQ^BLO9ej^8[5Ea41
+R8
+32
+R9
+!i10b 1
+R10
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd|
+Z25 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R3
+R4
+R5
+Z26 DEx4 work 3 pwm 0 22 OlYejm770FB=:H3dOBIYd1
+!i122 54
+l48
+L41 71
+V@:^1:=hzBehC^b>?DK7KJ0
+!s100 <:=d:[FhaKXPZ8Rj`Feb?3
+R8
+32
+R9
+!i10b 1
+R10
+R24
+R25
+!i113 1
+R13
+R14
+Estartstop
+Z27 w1793710666
+R3
+R4
+R5
+!i122 55
+R0
+Z28 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/StartStop.vhd
+Z29 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/StartStop.vhd
+l0
+L29 1
+V_mA9U[2o;zoZhi1Z_;3KM1
+!s100 kZ`9^clzilUBNIDUKX]PI3
+R8
+32
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/StartStop.vhd|
+Z31 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/StartStop.vhd|
+!i113 1
+R13
+R14
+Artl
+R3
+R4
+R5
+Z32 DEx4 work 9 startstop 0 22 _mA9U[2o;zoZhi1Z_;3KM1
+!i122 55
+l54
+L43 105
+VZ]a:?_aD:b]BY7dIAc`kY3
+!s100 OJ<WZMF>DUDKX7]QQJF2S1
+R8
+32
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Etop
+Z33 w1793989491
+R2
+R3
+R4
+R5
+!i122 61
+R0
+Z34 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd
+Z35 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd
+l0
+L35 1
+V@bV=knTZW4bcNiIoFTm`f0
+!s100 dRQ_OckaAg?Z_]`Re6H682
+R8
+32
+Z36 !s110 1793989731
+!i10b 1
+Z37 !s108 1793989731.000000
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd|
+Z39 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd|
+!i113 1
+R13
+R14
+Artl
+R26
+R15
+R32
+R2
+R3
+R4
+R5
+Z40 DEx4 work 3 top 0 22 @bV=knTZW4bcNiIoFTm`f0
+!i122 61
+l73
+L57 195
+VUzhTIU=bL`KDg>Jjkae1_2
+!s100 ZU2f[aMX5Hnl^Y4njjPml1
+R8
+32
+R36
+!i10b 1
+R37
+R38
+R39
+!i113 1
+R13
+R14
+Etop_tb
+Z41 w1793990241
+R2
+Z42 DPx4 ieee 16 std_logic_textio 0 22 ^l:n6VFdg74Q?CKDhjD]D3
+R3
+R4
+R5
+!i122 62
+R0
+Z43 8/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/top_tb/top_tb.vhd
+Z44 F/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/top_tb/top_tb.vhd
+l0
+L30 1
+VK7;b`JXG4Ezz;_4K`6XK82
+!s100 fO1[ff5:gC;OKfKMkkkZO1
+R8
+32
+Z45 !s110 1793990365
+!i10b 1
+Z46 !s108 1793990365.000000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/top_tb/top_tb.vhd|
+Z48 !s107 /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/top_tb/top_tb.vhd|
+!i113 1
+R13
+R14
+Asim
+R40
+R2
+R42
+R3
+R4
+R5
+Z49 DEx4 work 6 top_tb 0 22 K7;b`JXG4Ezz;_4K`6XK82
+!i122 62
+l112
+L33 509
+VQIW63l8<YX_oU1BLoDJU00
+!s100 [QBhhT[<ZO5dhNz0U8d2m1
+R8
+32
+R45
+!i10b 1
+R46
+R47
+R48
+!i113 1
+R13
+R14

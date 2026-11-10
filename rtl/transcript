@@ -1,0 +1,280 @@
+project open /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb
+# Loading project direction_tb
+# Compile of direction_tb.vhd was successful.
+ls
+# direction_tb.cr.mti
+# direction_tb.mpf
+# direction_tb.vhd
+# transcript
+# vsim.wlf
+# work
+vsim direction_tb
+# vsim direction_tb 
+# Start time: 17:55:33 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 6 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 6 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 2 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 2 but got 4
+#    Time: 26 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 0 but got 4
+#    Time: 36 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: SIMULATION FINISHED WITH 6 ERROR(S)
+#    Time: 66 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 269
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+quit -sim
+# Compile of direction.vhd was successful.
+vsim direction_tb
+# End time: 17:59:18 on Nov 05,2026, Elapsed time: 0:03:45
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 17:59:18 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 6 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 6 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 2 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 2 but got 4
+#    Time: 26 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_L should be equal to 0 but got 4
+#    Time: 36 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: SIMULATION FINISHED WITH 6 ERROR(S)
+#    Time: 66 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 269
+quit -sim
+# Compile of direction_tb.vhd was successful.
+vsim direction_tb
+# End time: 18:08:50 on Nov 05,2026, Elapsed time: 0:09:32
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:08:50 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 1 FINISHED WITH 2 ERROR(S)
+#    Time: 16 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 181
+run -all
+# ** Note: Error pwm_duty_cycle_R should be equal to 2 but got 4
+#    Time: 36 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 2 FINISHED WITH 3 ERROR(S)
+#    Time: 36 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 207
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 2 but got 4
+#    Time: 56 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 3 FINISHED WITH 4 ERROR(S)
+#    Time: 56 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 233
+quit -sim
+vsim direction_tb
+# End time: 18:09:49 on Nov 05,2026, Elapsed time: 0:00:59
+# Errors: 3, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:09:49 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 1 FINISHED WITH 2 ERROR(S)
+#    Time: 16 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 181
+quit -sim
+vsim direction_tb
+# End time: 18:12:41 on Nov 05,2026, Elapsed time: 0:02:52
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:12:41 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 1 FINISHED WITH 2 ERROR(S)
+#    Time: 16 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 181
+quit -sim
+# Compile of direction_tb.vhd was successful.
+vsim direction_tb
+# End time: 18:13:00 on Nov 05,2026, Elapsed time: 0:00:19
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:13:00 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: Error pwm_duty_cycle_L should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 4 but got 0
+#    Time: 16 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 1 FINISHED WITH 2 ERROR(S)
+#    Time: 16 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 178
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+quit -sim
+# Compile of direction_tb.vhd was successful.
+vsim direction_tb
+# End time: 18:14:55 on Nov 05,2026, Elapsed time: 0:01:55
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:14:55 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: TEST 1 PASSED
+#    Time: 26 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 2 but got 4
+#    Time: 46 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 2 FINISHED WITH 1 ERROR(S)
+#    Time: 46 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 205
+quit -sim
+# Compile of direction_tb.vhd was successful.
+# Compile of direction.vhd was successful.
+vsim direction_tb
+# End time: 18:26:03 on Nov 05,2026, Elapsed time: 0:11:08
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:26:03 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: TEST 1 PASSED
+#    Time: 26 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: Error pwm_duty_cycle_R should be equal to 2 but got 4
+#    Time: 56 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: TEST 2 FINISHED WITH 1 ERROR(S)
+#    Time: 56 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 206
+quit -sim
+# Compile of direction_tb.vhd was successful.
+vsim direction_tb
+# End time: 18:28:01 on Nov 05,2026, Elapsed time: 0:01:58
+# Errors: 1, Warnings: 0
+# vsim direction_tb 
+# Start time: 18:28:01 on Nov 05,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.drone_pkg(body)
+# Loading work.direction_tb(sim)
+# Loading work.direction(rtl)
+add wave -r /*
+run -all
+# ** Note: TEST 1 PASSED
+#    Time: 26 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: TEST 2 PASSED
+#    Time: 66 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: TEST 3 PASSED
+#    Time: 106 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: TEST 4 PASSED
+#    Time: 146 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: TEST 5 PASSED
+#    Time: 176 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: TEST 6 PASSED
+#    Time: 226 ns  Iteration: 0  Instance: /direction_tb
+# ** Note: ALL TESTS PASSED
+#    Time: 226 ns  Iteration: 0  Instance: /direction_tb
+# ** Failure: End of simulation
+#    Time: 226 ns  Iteration: 0  Process: /direction_tb/STIM File: /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd
+# Break in Process STIM at /home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/direction_tb/direction_tb.vhd line 338
+# End time: 18:29:47 on Nov 05,2026, Elapsed time: 0:01:46
+# Errors: 1, Warnings: 17
