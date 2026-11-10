@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "StartStop_tb_behav" "xil_defaultlib.StartStop_tb" -log "elaborate.log" 

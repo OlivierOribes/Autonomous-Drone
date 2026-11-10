@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 14 2025
+12:36:23
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/StartStop.vhd,1793710666,vhdl,/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/start_stop_tb/startstop_tb.vhd,,,startstop,,,,,,,,
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd,1794304576,vhdl,/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd,,,direction,,,,,,,,
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/drone_pkg.vhd,1793990652,vhdl,/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/direction.vhd;/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd;/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd,,,drone_pkg,,,,,,,,
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/pwm.vhd,1793918998,vhdl,/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd,,,pwm,,,,,,,,
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/rtl/top.vhd,1794305390,vhdl,,,,top,,,,,,,,
+/home/olivier/Documents/Courses/Architecture_Design_and_Synthesis_of_Hardware_Systems/BE/Drone/sim/start_stop_tb/startstop_tb.vhd,1793990703,vhdl,,,,startstop_tb,,,,,,,,
