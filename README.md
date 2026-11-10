@@ -192,7 +192,7 @@ Each testbench is **self-checking**: it counts errors and prints `TEST n PASSED`
 cd sim/pwm_tb
 vlib work
 vcom -2008 ../../rtl/drone_pkg.vhd ../../rtl/pwm.vhd pwm_tb.vhd
-vsim -c pwm_tb -do "run -all; quit"
+vsim -c pwm_tb -do "add wave -r /*; run -all; quit"
 ```
 
 For `top_tb`, compile every file in `rtl/` (`drone_pkg.vhd` first). The `DEBOUNCE_CYCLES` generic on `top` lets the testbench use a much shorter debounce time, so simulations stay fast.
