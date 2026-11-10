@@ -51,53 +51,9 @@ Everything is plain synchronous RTL: no soft-core CPU, no IP cores. Every asynch
 
 ## 🏗 Architecture
 
-```mermaid
-flowchart LR
-    subgraph IN[" Inputs "]
-        direction TB
-        CLK(["clk_i<br/>100 MHz"])
-        BTNC(["btnC<br/>Start / Stop"])
-        BTNL(["btnL<br/>Reset"])
-        BTND(["btnD<br/>Display"])
-        SL(["SensLeft"])
-        SR(["SensRight"])
-    end
-
-    subgraph TOP[" top.vhd "]
-        direction LR
-        SS["StartStop<br/><i>debounce + toggle FSM</i>"]
-        DIR["direction<br/><i>navigation FSM</i>"]
-        PWML["pwm (L)<br/><i>50 Hz</i>"]
-        PWMR["pwm (R)<br/><i>50 Hz</i>"]
-        HB["H-bridge<br/>routing"]
-        DT["StartStop<br/><i>display toggle</i>"]
-        DISP["7-seg driver<br/><i>1 kHz scan</i>"]
-
-        SS -- move --> DIR
-        DIR -- speed_L --> PWML
-        DIR -- speed_R --> PWMR
-        DIR -- dir_L / dir_R --> HB
-        PWML --> HB
-        PWMR --> HB
-        DIR -. speed codes .-> DISP
-        DT -- display_speed --> DISP
-    end
-
-    subgraph OUT[" Outputs "]
-        direction TB
-        ML(["MotorLeft<br/>pos / neg"])
-        MR(["MotorRight<br/>pos / neg"])
-        SEG(["seg[6:0]<br/>an[3:0]"])
-    end
-
-    BTNC --> SS
-    BTND --> DT
-    SL --> DIR
-    SR --> DIR
-    HB --> ML
-    HB --> MR
-    DISP --> SEG
-```
+<p align="center">
+  <img src="docs/img/architecture.svg" alt="Architecture of the drone controller" width="100%">
+</p>
 
 > `btnL` is inverted into the global active-low reset `rstn_i`, which is shared by every module.
 
@@ -119,24 +75,9 @@ flowchart LR
 
 The `direction` FSM loops through **`DETECT → action → DETECT`** as long as the drone is running. A sensor reads `1` when it sees the black line.
 
-```mermaid
-stateDiagram-v2
-    direction LR
-    [*] --> IDLE
-    IDLE --> DETECT : move = 1
-    DETECT --> MOVESTRAIGHT : 00
-    DETECT --> TURNRIGHT : 01
-    DETECT --> TURNLEFT : 10
-    DETECT --> TURNAROUND : 11
-    MOVESTRAIGHT --> DETECT
-    TURNRIGHT --> DETECT
-    TURNLEFT --> DETECT
-    TURNAROUND --> DETECT
-    note right of IDLE
-        move = 0 from any state
-        → IDLE, both motors STILL
-    end note
-```
+<p align="center">
+  <img src="docs/img/navigation_fsm.svg" alt="Navigation FSM" width="85%">
+</p>
 
 The sensor vector is `SensLeft & SensRight`:
 
@@ -226,6 +167,7 @@ All I/O use `LVCMOS33`. The full constraint file is `Drone_Vivado_project/projec
 │   ├── direction_tb/
 │   ├── start_stop_tb/
 │   └── top_tb/
+├── docs/img/                  # README diagrams (SVG)
 ├── Drone_Vivado_project/      # Vivado project + XDC constraints
 ├── LICENSE
 └── README.md
