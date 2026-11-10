@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" width="1100" height="560" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#495057"/>
+    </marker>
+    <marker id="arrP" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#6f42c1"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <style>
+    .blk  { fill:#f3f0ff; stroke:#6f42c1; stroke-width:1.6; }
+    .in   { fill:#e7f5ff; stroke:#1c7ed6; stroke-width:1.4; }
+    .out  { fill:#ebfbee; stroke:#2b8a3e; stroke-width:1.4; }
+    .glb  { fill:#fff4e6; stroke:#e8590c; stroke-width:1.4; }
+    .t    { font-size:15px; font-weight:700; fill:#212529; text-anchor:middle; }
+    .s    { font-size:11.5px; font-style:italic; fill:#6c757d; text-anchor:middle; }
+    .io   { font-size:13px; font-weight:600; fill:#212529; text-anchor:middle; }
+    .ios  { font-size:10.5px; fill:#6c757d; text-anchor:middle; }
+    .lbl  { font-size:11.5px; font-family:JetBrains Mono, Consolas, monospace; fill:#495057; }
+    .w    { fill:none; stroke:#495057; stroke-width:1.6; marker-end:url(#arr); }
+    .wd   { fill:none; stroke:#6f42c1; stroke-width:1.4; stroke-dasharray:5 4; marker-end:url(#arrP); }
+    .hdr  { font-size:12px; font-weight:700; letter-spacing:2px; fill:#868e96; text-anchor:middle; }
+  </style>
+
+  <!-- card -->
+  <rect x="1" y="1" width="1098" height="558" rx="14" fill="#ffffff" stroke="#dee2e6"/>
+
+  <!-- column headers -->
+  <text x="95"  y="42" class="hdr">INPUTS</text>
+  <text x="1000" y="42" class="hdr">OUTPUTS</text>
+
+  <!-- top frame -->
+  <rect x="200" y="60" width="700" height="400" rx="12" fill="#fcfcfd" stroke="#adb5bd" stroke-width="1.4" stroke-dasharray="7 5"/>
+  <rect x="216" y="50" width="86" height="22" rx="6" fill="#212529"/>
+  <text x="259" y="65.5" font-size="12.5" font-weight="700" fill="#fff" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace">top.vhd</text>
+
+  <!-- ===== inputs ===== -->
+  <g filter="url(#sh)">
+    <rect x="30" y="110" width="130" height="36" rx="18" class="in"/>
+    <rect x="30" y="207" width="130" height="36" rx="18" class="in"/>
+    <rect x="30" y="247" width="130" height="36" rx="18" class="in"/>
+    <rect x="30" y="380" width="130" height="36" rx="18" class="in"/>
+  </g>
+  <text x="95" y="126" class="io">btnC</text><text x="95" y="139" class="ios">Start / Stop</text>
+  <text x="95" y="229.5" class="io">SensLeft</text>
+  <text x="95" y="269.5" class="io">SensRight</text>
+  <text x="95" y="396" class="io">btnD</text><text x="95" y="409" class="ios">Display toggle</text>
+
+  <!-- ===== blocks ===== -->
+  <g filter="url(#sh)">
+    <rect x="230" y="100" width="150" height="56" rx="10" class="blk"/>
+    <rect x="430" y="170" width="150" height="115" rx="10" class="blk"/>
+    <rect x="620" y="170" width="110" height="50" rx="10" class="blk"/>
+    <rect x="620" y="240" width="110" height="50" rx="10" class="blk"/>
+    <rect x="770" y="170" width="105" height="120" rx="10" class="blk"/>
+    <rect x="230" y="370" width="150" height="56" rx="10" class="blk"/>
+    <rect x="620" y="370" width="255" height="56" rx="10" class="blk"/>
+  </g>
+
+  <text x="305" y="125" class="t">StartStop</text>
+  <text x="305" y="143" class="s">debounce + toggle FSM</text>
+
+  <text x="505" y="222" class="t">direction</text>
+  <text x="505" y="240" class="s">navigation FSM</text>
+
+  <text x="675" y="194" class="t">pwm (L)</text>
+  <text x="675" y="210" class="s">50 Hz</text>
+  <text x="675" y="264" class="t">pwm (R)</text>
+  <text x="675" y="280" class="s">50 Hz</text>
+
+  <text x="822.5" y="222" class="t">H-bridge</text>
+  <text x="822.5" y="239" class="t">routing</text>
+  <text x="822.5" y="256" class="s">PWM → pos / neg</text>
+
+  <text x="305" y="395" class="t">StartStop</text>
+  <text x="305" y="413" class="s">display toggle</text>
+
+  <text x="747.5" y="395" class="t">7-segment driver</text>
+  <text x="747.5" y="413" class="s">1 kHz multiplexed scan</text>
+
+  <!-- ===== outputs ===== -->
+  <g filter="url(#sh)">
+    <rect x="935" y="177" width="130" height="44" rx="22" class="out"/>
+    <rect x="935" y="240" width="130" height="44" rx="22" class="out"/>
+    <rect x="935" y="376" width="130" height="44" rx="22" class="out"/>
+  </g>
+  <text x="1000" y="196" class="io">MotorLeft</text><text x="1000" y="211" class="ios">pos / neg</text>
+  <text x="1000" y="259" class="io">MotorRight</text><text x="1000" y="274" class="ios">pos / neg</text>
+  <text x="1000" y="395" class="io">seg / an</text><text x="1000" y="410" class="ios">7-seg display</text>
+
+  <!-- ===== wires ===== -->
+  <!-- inputs -->
+  <path d="M160,128 H228" class="w"/>
+  <path d="M160,225 H428" class="w"/>
+  <path d="M160,265 H428" class="w"/>
+  <path d="M160,398 H228" class="w"/>
+
+  <!-- move -->
+  <path d="M380,128 H405 V190 H428" class="w"/>
+  <text x="388" y="120" class="lbl">move</text>
+
+  <!-- speeds -->
+  <path d="M580,195 H618" class="w"/>
+  <text x="584" y="188" class="lbl">spd_L</text>
+  <path d="M580,265 H618" class="w"/>
+  <text x="584" y="258" class="lbl">spd_R</text>
+
+  <!-- dir -->
+  <path d="M580,230 H768" class="w"/>
+  <text x="750" y="225" class="lbl" text-anchor="middle">dir</text>
+
+  <!-- pwm -> hb -->
+  <path d="M730,195 H768" class="w"/>
+  <path d="M730,265 H768" class="w"/>
+
+  <!-- hb -> outputs -->
+  <path d="M875,199 H933" class="w"/>
+  <path d="M875,262 H933" class="w"/>
+
+  <!-- display -->
+  <path d="M380,398 H618" class="w"/>
+  <text x="440" y="390" class="lbl">display_speed</text>
+  <path d="M505,285 V335 H700 V368" class="wd"/>
+  <text x="515" y="328" class="lbl" fill="#6f42c1">speed codes</text>
+  <path d="M875,398 H933" class="w"/>
+
+  <!-- ===== global clock / reset ===== -->
+  <g filter="url(#sh)">
+    <rect x="30" y="486" width="150" height="40" rx="20" class="glb"/>
+    <rect x="200" y="486" width="150" height="40" rx="20" class="glb"/>
+  </g>
+  <text x="105" y="503" class="io">clk_i</text><text x="105" y="517" class="ios">100 MHz · W5</text>
+  <text x="275" y="503" class="io">btnL → rstn_i</text><text x="275" y="517" class="ios">active-low reset · W19</text>
+  <path d="M350,506 H400" fill="none" stroke="#e8590c" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round"/>
+  <text x="410" y="510" font-size="12.5" fill="#495057">shared by every block in <tspan font-family="JetBrains Mono, Consolas, monospace" font-weight="700">top</tspan></text>
+</svg>

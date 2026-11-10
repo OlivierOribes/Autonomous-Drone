@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450" width="900" height="450" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#495057"/>
+    </marker>
+    <marker id="arrG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#adb5bd"/>
+    </marker>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <style>
+    .st   { fill:#f3f0ff; stroke:#6f42c1; stroke-width:1.6; }
+    .hub  { fill:#6f42c1; stroke:#5a32a3; stroke-width:1.6; }
+    .idle { fill:#f1f3f5; stroke:#868e96; stroke-width:1.6; }
+    .t    { font-size:15px; font-weight:700; fill:#212529; text-anchor:middle; }
+    .s    { font-size:11.5px; fill:#6c757d; text-anchor:middle; font-family:JetBrains Mono, Consolas, monospace; }
+    .code { font-size:12px; font-weight:700; fill:#6f42c1; font-family:JetBrains Mono, Consolas, monospace; }
+    .w    { fill:none; stroke:#495057; stroke-width:1.6; marker-end:url(#arr); }
+    .ret  { fill:none; stroke:#adb5bd; stroke-width:1.6; marker-end:url(#arrG); }
+    .pill { fill:#fff; stroke:#d0bfff; stroke-width:1.2; }
+  </style>
+
+  <rect x="1" y="1" width="898" height="448" rx="14" fill="#ffffff" stroke="#dee2e6"/>
+
+  <!-- reset dot -->
+  <circle cx="50" cy="210" r="9" fill="#212529"/>
+  <path d="M59,210 H98" class="w"/>
+
+  <!-- states -->
+  <g filter="url(#sh)">
+    <rect x="100" y="185" width="120" height="50" rx="25" class="idle"/>
+    <rect x="320" y="185" width="140" height="50" rx="25" class="hub"/>
+    <rect x="590" y="50"  width="210" height="48" rx="12" class="st"/>
+    <rect x="590" y="140" width="210" height="48" rx="12" class="st"/>
+    <rect x="590" y="230" width="210" height="48" rx="12" class="st"/>
+    <rect x="590" y="320" width="210" height="48" rx="12" class="st"/>
+  </g>
+
+  <text x="160" y="215" class="t">IDLE</text>
+  <text x="390" y="215" class="t" style="fill:#ffffff">DETECT</text>
+
+  <text x="695" y="70"  class="t">MOVESTRAIGHT</text>
+  <text x="695" y="88"  class="s">L ▲95%  ·  R ▲95%</text>
+  <text x="695" y="160" class="t">TURNRIGHT</text>
+  <text x="695" y="178" class="s">L ▲95%  ·  R ▲15%</text>
+  <text x="695" y="250" class="t">TURNLEFT</text>
+  <text x="695" y="268" class="s">L ▲15%  ·  R ▲95%</text>
+  <text x="695" y="340" class="t">TURNAROUND</text>
+  <text x="695" y="358" class="s">L ▼50%  ·  R ▲95%</text>
+
+  <!-- IDLE -> DETECT -->
+  <path d="M220,210 H318" class="w"/>
+  <text x="269" y="200" font-size="12" fill="#495057" text-anchor="middle" font-family="JetBrains Mono, Consolas, monospace">move = 1</text>
+
+  <!-- DETECT -> actions -->
+  <path d="M460,204 C510,204 530,74 588,74"   class="w"/>
+  <path d="M460,208 C510,208 530,164 588,164" class="w"/>
+  <path d="M460,212 C510,212 530,254 588,254" class="w"/>
+  <path d="M460,216 C510,216 530,344 588,344" class="w"/>
+
+  <!-- sensor codes -->
+  <g>
+    <rect x="510" y="96"  width="42" height="20" rx="10" class="pill"/><text x="531" y="110.5" class="code" text-anchor="middle">00</text>
+    <rect x="518" y="164" width="42" height="20" rx="10" class="pill"/><text x="539" y="178.5" class="code" text-anchor="middle">01</text>
+    <rect x="518" y="236" width="42" height="20" rx="10" class="pill"/><text x="539" y="250.5" class="code" text-anchor="middle">10</text>
+    <rect x="510" y="302" width="42" height="20" rx="10" class="pill"/><text x="531" y="316.5" class="code" text-anchor="middle">11</text>
+  </g>
+  <text x="530" y="40" font-size="11.5" fill="#868e96" text-anchor="middle">sensors  L R</text>
+
+  <!-- return bus -->
+  <path d="M800,74 H840"  fill="none" stroke="#adb5bd" stroke-width="1.6"/>
+  <path d="M800,164 H840" fill="none" stroke="#adb5bd" stroke-width="1.6"/>
+  <path d="M800,254 H840" fill="none" stroke="#adb5bd" stroke-width="1.6"/>
+  <path d="M800,344 H840" fill="none" stroke="#adb5bd" stroke-width="1.6"/>
+  <path d="M840,74 V405 H390 V237" class="ret"/>
+  <text x="615" y="425" font-size="12" fill="#868e96" text-anchor="middle">back to DETECT on the next clock cycle</text>
+
+  <!-- note -->
+  <rect x="40" y="300" width="250" height="68" rx="10" fill="#fff9db" stroke="#fab005" stroke-width="1.2" stroke-dasharray="5 4"/>
+  <text x="58" y="325" font-size="12.5" font-weight="700" fill="#212529">move = 0  (from any state)</text>
+  <text x="58" y="345" font-size="12" fill="#495057">→ IDLE, both motors STILL (0 %)</text>
+  <text x="58" y="360" font-size="12" fill="#495057">→ directions reset to forward</text>
+</svg>
