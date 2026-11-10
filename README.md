@@ -197,13 +197,6 @@ vsim -c pwm_tb -do "add wave -r /*; run -all; quit"
 
 For `top_tb`, compile every file in `rtl/` (`drone_pkg.vhd` first). The `DEBOUNCE_CYCLES` generic on `top` lets the testbench use a much shorter debounce time, so simulations stay fast.
 
-### Run with GHDL (open-source alternative)
-
-```bash
-ghdl -a --std=08 rtl/drone_pkg.vhd rtl/pwm.vhd sim/pwm_tb/pwm_tb.vhd
-ghdl -r --std=08 pwm_tb --wave=pwm.ghw
-```
-
 ---
 
 ## 🔧 Build and flash
